@@ -1,0 +1,21 @@
+.login-page {
+  min-height: 100vh; display: grid; place-items: center; padding: 24px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(131, 80, 196, .55), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(115, 146, 181, .55), transparent 45%),
+    var(--midnight-violet);
+}
+.login-card {
+  width: min(440px, 100%); padding: 44px 36px; border-radius: 28px; text-align: center;
+  background: var(--paper); box-shadow: 0 30px 80px rgba(0, 0, 0, .35); animation: pop .4s ease;
+}
+.login-spark { font-size: 2.6rem; color: var(--deep-lilac); }
+.login-card h1 { font-family: 'Gloock', serif; font-weight: 400; font-size: 2.2rem; color: var(--midnight-violet); margin-top: 8px; }
+.login-sub { color: var(--dusty-denim); font-weight: 600; margin: 6px 0 18px; }
+.login-text { margin: 0 0 28px; line-height: 1.5; }
+.login-buttons { display: grid; gap: 12px; }
+.btn-provider { padding: 14px 20px; font-size: 1rem; border-radius: 14px; }
+.btn-github { background: var(--shadow-grey); }
+.btn-google { background: var(--paper); color: var(--shadow-grey); border: 2px solid var(--pale-sky); }
+.login-error { color: var(--danger); margin: 16px 0 0; }
+.login-foot { margin: 24px 0 0; font-size: .8rem; opacity: .6; }

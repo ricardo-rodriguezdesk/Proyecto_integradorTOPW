@@ -1,0 +1,19 @@
+{
+  "name": "practica-integradora-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proceso de carga (ETL): APIs públicas → Supabase",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "load": "node src/index.js all",
+    "load:countries": "node src/index.js countries",
+    "load:starwars": "node src/index.js starwars",
+    "load:movies": "node src/index.js movies",
+    "load:weather": "node src/index.js weather"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.4.5"
+  }
+}
